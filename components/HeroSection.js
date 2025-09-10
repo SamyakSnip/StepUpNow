@@ -75,8 +75,8 @@ function HeroSection() {
       </div>
       <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-8 h-full">
         {/* Text Section */}
-        <div className="flex-1 space-y-6 text-center md:text-left max-w-xl md:max-w-2xl">
-          <h2 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight text-white">
+        <div className="flex-1 md:flex-[2] flex flex-col space-y-6 text-center md:text-left max-w-xl md:max-w-3xl">
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tight leading-snug text-white">
             Get There Faster — With Someone Who Just Did
           </h2>
           <p className="text-base md:text-lg text-gray-300 leading-relaxed">
@@ -87,7 +87,7 @@ function HeroSection() {
           </p>
           <Link
             href="/mentors"
-            className="block mx-auto md:mx-0 w-44 md:w-auto text-center bg-white text-black px-8 py-4 rounded-lg text-xl sm:text-lg hover:bg-gray-100 hover:shadow-xl transition duration-300 shadow-lg transform hover:scale-105"
+            className="self-center md:self-start w-96 text-center bg-white text-black px-8 py-5 rounded-lg text-xl hover:bg-gray-100 hover:shadow-xl transition duration-300 shadow-lg transform hover:scale-105"
           >
             Book Now
           </Link>
