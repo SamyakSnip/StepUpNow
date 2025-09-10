@@ -43,7 +43,7 @@ const Mentors = () => {
           ].map((mentor, idx) => (
             <div
               key={idx}
-              className="bg-gray-900 border border-gray-700 rounded-2xl p-6 w-full max-w-xs shadow-md hover:shadow-2xl hover:bg-gray-900/80 transition duration-300"
+              className="bg-gray-900 border border-gray-700 rounded-2xl p-8 w-full max-w-xs shadow-lg hover:shadow-2xl hover:bg-gray-900/80 transition duration-300"
             >
               {/* Profile Image */}
               <div className="flex justify-center">
@@ -87,7 +87,7 @@ const Mentors = () => {
         <div className="text-center mt-14">
           <Link
             href="/mentors"
-            className="inline-block px-6 py-3 bg-white text-black font-semibold rounded-xl hover:bg-gray-200 transition"
+            className="inline-block px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 hover:shadow-xl transition duration-300 shadow-lg transform hover:scale-105"
           >
             Explore More Mentors
           </Link>
