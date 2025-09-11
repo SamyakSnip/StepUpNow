@@ -94,12 +94,22 @@ function HeroSection() {
         </div>
         
         {/* Animation Section */}
-        <div className="flex-1 relative z-10 w-full h-64 md:h-80 overflow-hidden">
-          <img
-            src="/hero.jpg"
-            alt="Hero Image"
-            className="absolute inset-0 w-full h-full object-cover rounded-xl shadow-lg border-2 border-white/20"
-          />
+        <div className="flex-1 relative z-10 w-full h-64 md:h-80 overflow-hidden flex justify-center md:justify-end items-end gap-2.5 px-4 md:px-0">
+          {[
+            "w-12 md:w-[60px] h-16 md:h-20",
+            "w-12 md:w-[60px] h-24 md:h-30",
+            "w-12 md:w-[60px] h-32 md:h-40",
+            "w-12 md:w-[60px] h-40 md:h-50",
+            "w-12 md:w-[60px] h-48 md:h-60"
+          ].map((sizeClasses, index) => (
+            <motion.div
+              key={index}
+              className={`origin-bottom ${sizeClasses} bg-gradient-to-b from-blue-600 to-purple-700 rounded-lg shadow-[0_0_20px_rgba(99,102,241,0.4)] flex-shrink-0`}
+              initial={{ scaleY: 0 }}
+              animate={{ scaleY: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.2 }}
+            />
+          ))}
         </div>
       </div>
     </section>
