@@ -73,9 +73,11 @@ function HeroSection() {
           transition={{ duration: 93, repeat: Infinity, delay: 4.6 }}
         />
       </div>
-      <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-8 h-full">
+      {/* FIXED: Added md:pr-80 to create space for stairs on desktop - prevents text cutoff */}
+      <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-start gap-8 h-full md:pr-80">
         {/* Text Section */}
-        <div className="flex-1 md:flex-[2] flex flex-col space-y-6 text-center md:text-left max-w-none md:max-w-4xl">
+        {/* FIXED: Reduced max-width from md:max-w-4xl to md:max-w-3xl to prevent text from extending into stairs area */}
+        <div className="flex-1 md:flex-[2] flex flex-col space-y-6 text-center md:text-left max-w-none md:max-w-3xl">
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight leading-snug text-white">
             Get There Faster — With Someone Who Just Did
           </h2>
@@ -105,7 +107,7 @@ function HeroSection() {
         ].map((sizeClasses, index) => (
           <motion.div
             key={index}
-            className={`origin-bottom ${sizeClasses} bg-gradient-to-b from-blue-500 to-slate-800 border border-blue-400/30 rounded-lg shadow-[0_0_18px_rgba(59,130,246,0.3)] flex-shrink-0`}
+            className={`origin-bottom ${sizeClasses} bg-gradient-to-b from-blue-200/20 to-slate-900/20 border border-blue-400/30 rounded-lg shadow-[0_0_18px_rgba(59,130,246,0.3)] flex-shrink-0`}
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.2 }}
@@ -114,7 +116,7 @@ function HeroSection() {
       </div>
 
       {/* Mobile stairs - centered below content with proper spacing */}
-      <div className="md:hidden flex justify-center items-end gap-2 h-48 mt-12 px-4">
+      <div className="md:hidden flex justify-center items-end gap-2 h-48 z-10 mt-12 px-4">
         {[
           "w-10 h-20",
           "w-10 h-28",
@@ -124,7 +126,7 @@ function HeroSection() {
         ].map((sizeClasses, index) => (
           <motion.div
             key={`mobile-${index}`}
-            className={`origin-bottom ${sizeClasses} bg-gradient-to-b from-blue-600 to-purple-700 rounded-lg shadow-[0_0_15px_rgba(99,102,241,0.4)] flex-shrink-0`}
+            className={`origin-bottom ${sizeClasses} bg-gradient-to-b from-blue-200/20 to-slate-900/20 rounded-lg shadow-[0_0_15px_rgba(99,102,241,0.4)] flex-shrink-0`}
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.2 }}
