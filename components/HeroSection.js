@@ -8,67 +8,67 @@ function HeroSection() {
     <section className="relative pt-14 pb-16 md:pt-24 md:pb-24 min-h-[70vh] md:min-h-[80vh] bg-gradient-to-br from-blue-950 via-gray-900 to-black">
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <motion.div
-          className="absolute top-10 left-20 w-36 h-36 bg-gradient-to-r from-blue-900 via-purple-900 to-cyan-800 rounded-full opacity-25 blur-md shadow-[0_0_10px_rgba(147,51,234,0.15)]"
+          className="absolute top-10 left-20 w-36 h-36 bg-gradient-to-r from-blue-800 via-purple-800 to-cyan-700 rounded-full opacity-40 blur-md shadow-[0_0_10px_rgba(147,51,234,0.3)]"
           animate={{ y: [0, -486, 0] }}
           transition={{ duration: 112.5, repeat: Infinity, delay: 0 }}
         />
         <motion.div
-          className="absolute top-1/2 left-10 w-27 h-27 bg-gradient-to-r from-blue-900 via-purple-900 to-cyan-800 rounded-full opacity-20 blur-md shadow-[0_0_8px_rgba(59,130,246,0.15)]"
+          className="absolute top-1/2 left-10 w-27 h-27 bg-gradient-to-r from-blue-800 via-purple-800 to-cyan-700 rounded-full opacity-35 blur-md shadow-[0_0_8px_rgba(59,130,246,0.3)]"
           animate={{ y: [0, -324, 0] }}
           transition={{ duration: 112.5, repeat: Infinity, delay: 2 }}
         />
         <motion.div
-          className="absolute top-20 left-1/3 w-45 h-45 bg-gradient-to-r from-blue-900 via-purple-900 to-cyan-800 rounded-full opacity-25 blur-md shadow-[0_0_12px_rgba(147,51,234,0.15)]"
+          className="absolute top-20 left-1/3 w-45 h-45 bg-gradient-to-r from-blue-800 via-purple-800 to-cyan-700 rounded-full opacity-40 blur-md shadow-[0_0_12px_rgba(147,51,234,0.3)]"
           animate={{ y: [0, -810, 0] }}
           transition={{ duration: 112.5, repeat: Infinity, delay: 1 }}
         />
         <motion.div
-          className="absolute top-1/4 right-1/4 w-54 h-54 bg-gradient-to-r from-blue-900 via-purple-900 to-cyan-800 rounded-full opacity-35 blur-md shadow-[0_0_15px_rgba(59,130,246,0.25)]"
+          className="absolute top-1/4 right-1/4 w-54 h-54 bg-gradient-to-r from-blue-800 via-purple-800 to-cyan-700 rounded-full opacity-50 blur-md shadow-[0_0_15px_rgba(59,130,246,0.4)]"
           animate={{ y: [0, -1296, 0] }}
           transition={{ duration: 90.0, repeat: Infinity, delay: 3 }}
         />
         <motion.div
-          className="absolute top-5 right-5 w-63 h-63 md:w-81 md:h-81 bg-gradient-to-r from-blue-900 via-purple-900 to-cyan-800 rounded-full opacity-30 blur-md shadow-[0_0_18px_rgba(147,51,234,0.2)]"
+          className="absolute top-5 right-5 w-63 h-63 md:w-81 md:h-81 bg-gradient-to-r from-blue-800 via-purple-800 to-cyan-700 rounded-full opacity-45 blur-md shadow-[0_0_18px_rgba(147,51,234,0.35)]"
           animate={{ y: [0, -972, 0] }}
           transition={{ duration: 112.5, repeat: Infinity, delay: 0.5 }}
         />
         <motion.div
-          className="absolute bottom-10 right-10 w-72 h-72 bg-gradient-to-r from-blue-900 via-purple-900 to-cyan-800 rounded-full opacity-40 blur-md shadow-[0_0_20px_rgba(34,197,94,0.3)]"
+          className="absolute bottom-10 right-10 w-72 h-72 bg-gradient-to-r from-blue-800 via-purple-800 to-cyan-700 rounded-full opacity-55 blur-md shadow-[0_0_20px_rgba(34,197,94,0.45)]"
           animate={{ y: [0, -1620, 0] }}
           transition={{ duration: 67.5, repeat: Infinity, delay: 4 }}
         />
         <motion.div
-          className="absolute top-3/4 right-1/4 w-54 h-54 bg-gradient-to-r from-blue-900 via-purple-900 to-cyan-800 rounded-full opacity-30 blur-md shadow-[0_0_12px_rgba(59,130,246,0.2)]"
+          className="absolute top-3/4 right-1/4 w-54 h-54 bg-gradient-to-r from-blue-800 via-purple-800 to-cyan-700 rounded-full opacity-45 blur-md shadow-[0_0_12px_rgba(59,130,246,0.35)]"
           animate={{ y: [0, -648, 0] }}
           transition={{ duration: 135.0, repeat: Infinity, delay: 5 }}
         />
         <motion.div
-          className="absolute bottom-20 left-1/4 w-45 h-45 bg-gradient-to-r from-blue-900 via-purple-900 to-cyan-800 rounded-full opacity-20 blur-md shadow-[0_0_10px_rgba(147,51,234,0.1)]"
+          className="absolute bottom-20 left-1/4 w-45 h-45 bg-gradient-to-r from-blue-800 via-purple-800 to-cyan-700 rounded-full opacity-35 blur-md shadow-[0_0_10px_rgba(147,51,234,0.2)]"
           animate={{ y: [0, -486, 0] }}
           transition={{ duration: 90.0, repeat: Infinity, delay: 1.5 }}
         />
         <motion.div
-          className="absolute top-2 left-1/2 transform -translate-x-1/2 w-30 h-30 bg-gradient-to-r from-blue-900 via-purple-900 to-cyan-800 rounded-full opacity-15 blur-md shadow-[0_0_8px_rgba(147,51,234,0.1)]"
+          className="absolute top-2 left-1/2 transform -translate-x-1/2 w-30 h-30 bg-gradient-to-r from-blue-800 via-purple-800 to-cyan-700 rounded-full opacity-30 blur-md shadow-[0_0_8px_rgba(147,51,234,0.2)]"
           animate={{ y: [0, -600, 0] }}
           transition={{ duration: 80.0, repeat: Infinity, delay: 0.1 }}
         />
         <motion.div
-          className="absolute top-35 right-20 w-48 h-48 bg-gradient-to-r from-blue-900 via-purple-900 to-cyan-800 rounded-full opacity-30 blur-md shadow-[0_0_20px_rgba(59,130,246,0.25)]"
+          className="absolute top-35 right-20 w-48 h-48 bg-gradient-to-r from-blue-800 via-purple-800 to-cyan-700 rounded-full opacity-45 blur-md shadow-[0_0_20px_rgba(59,130,246,0.4)]"
           animate={{ y: [0, -1200, 0] }}
           transition={{ duration: 95.0, repeat: Infinity, delay: 1.1 }}
         />
         <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-54 h-54 bg-gradient-to-r from-blue-900 via-purple-900 to-cyan-800 rounded-full opacity-25 blur-md shadow-[0_0_18px_rgba(147,51,234,0.15)]"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-54 h-54 bg-gradient-to-r from-blue-800 via-purple-800 to-cyan-700 rounded-full opacity-40 blur-md shadow-[0_0_18px_rgba(147,51,234,0.3)]"
           animate={{ y: [0, -1050, 0] }}
           transition={{ duration: 115.0, repeat: Infinity, delay: 1.8 }}
         />
         <motion.div
-          className="absolute top-55 left-10 w-39 h-39 bg-gradient-to-r from-blue-900 via-purple-900 to-cyan-800 rounded-full opacity-18 blur-md shadow-[0_0_14px_rgba(34,197,94,0.15)]"
+          className="absolute top-55 left-10 w-39 h-39 bg-gradient-to-r from-blue-800 via-purple-800 to-cyan-700 rounded-full opacity-35 blur-md shadow-[0_0_14px_rgba(34,197,94,0.3)]"
           animate={{ y: [0, -840, 0] }}
           transition={{ duration: 130.0, repeat: Infinity, delay: 2.6 }}
         />
         <motion.div
-          className="absolute bottom-45 left-1/2 transform -translate-x-1/2 w-60 h-60 bg-gradient-to-r from-blue-900 via-purple-900 to-cyan-800 rounded-full opacity-26 blur-md shadow-[0_0_25px_rgba(59,130,246,0.22)]"
+          className="absolute bottom-45 left-1/2 transform -translate-x-1/2 w-60 h-60 bg-gradient-to-r from-blue-800 via-purple-800 to-cyan-700 rounded-full opacity-45 blur-md shadow-[0_0_25px_rgba(59,130,246,0.4)]"
           animate={{ y: [0, -1350, 0] }}
           transition={{ duration: 140.0, repeat: Infinity, delay: 4.6 }}
         />
