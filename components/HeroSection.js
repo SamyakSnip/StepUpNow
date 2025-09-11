@@ -75,7 +75,7 @@ function HeroSection() {
       </div>
       <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-8 h-full">
         {/* Text Section */}
-        <div className="flex-1 md:flex-[2] flex flex-col space-y-6 text-center md:text-left max-w-xl md:max-w-3xl">
+        <div className="flex-1 md:flex-[2] flex flex-col space-y-6 text-center md:text-left max-w-none md:max-w-4xl">
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight leading-snug text-white">
             Get There Faster — With Someone Who Just Did
           </h2>
@@ -92,25 +92,44 @@ function HeroSection() {
             Book Now
           </Link>
         </div>
-        
-        {/* Animation Section */}
-        <div className="flex-1 relative z-10 w-full h-64 md:h-80 overflow-hidden flex justify-center md:justify-end items-end gap-2.5 px-4 md:px-0">
-          {[
-            "w-12 md:w-[60px] h-16 md:h-20",
-            "w-12 md:w-[60px] h-24 md:h-30",
-            "w-12 md:w-[60px] h-32 md:h-40",
-            "w-12 md:w-[60px] h-40 md:h-50",
-            "w-12 md:w-[60px] h-48 md:h-60"
-          ].map((sizeClasses, index) => (
-            <motion.div
-              key={index}
-              className={`origin-bottom ${sizeClasses} bg-gradient-to-b from-blue-600 to-purple-700 rounded-lg shadow-[0_0_20px_rgba(99,102,241,0.4)] flex-shrink-0`}
-              initial={{ scaleY: 0 }}
-              animate={{ scaleY: 1 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.2 }}
-            />
-          ))}
-        </div>
+      </div>
+
+      {/* Stairs Animation - Desktop only, positioned at bottom */}
+      <div className="hidden md:flex absolute bottom-0 right-16 z-10 items-end gap-4 h-[48rem]">
+        {[
+          "w-[60px] h-64",
+          "w-[60px] h-96",
+          "w-[60px] h-[32rem]",
+          "w-[60px] h-[40rem]",
+          "w-[60px] h-[48rem]"
+        ].map((sizeClasses, index) => (
+          <motion.div
+            key={index}
+            className={`origin-bottom ${sizeClasses} bg-gradient-to-b from-blue-500 to-slate-800 border border-blue-400/30 rounded-lg shadow-[0_0_18px_rgba(59,130,246,0.3)] flex-shrink-0`}
+            initial={{ scaleY: 0 }}
+            animate={{ scaleY: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.2 }}
+          />
+        ))}
+      </div>
+
+      {/* Mobile stairs - centered below content with proper spacing */}
+      <div className="md:hidden flex justify-center items-end gap-2 h-48 mt-12 px-4">
+        {[
+          "w-10 h-20",
+          "w-10 h-28",
+          "w-10 h-36", 
+          "w-10 h-44",
+          "w-10 h-48"
+        ].map((sizeClasses, index) => (
+          <motion.div
+            key={`mobile-${index}`}
+            className={`origin-bottom ${sizeClasses} bg-gradient-to-b from-blue-600 to-purple-700 rounded-lg shadow-[0_0_15px_rgba(99,102,241,0.4)] flex-shrink-0`}
+            initial={{ scaleY: 0 }}
+            animate={{ scaleY: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.2 }}
+          />
+        ))}
       </div>
     </section>
   );
